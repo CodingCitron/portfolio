@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무에서 유 만들기</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/loading.js"></script>
+</head>
+<!--
+    https://colorhunt.co/palette/212648
+    기능
+    로고 바꾸기
+    글쓰기
+    카테고리 추가하기
+    댓글
+    로그인
+-->
+<body>
+    <div class="page-loading">
+        <div>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <header class="header">
+        <a href="index.html" class="logo">Record</a>
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navigation-menu">
+            <div>
+                <!-- 전체 보기 -->
+                <ul class="menu">
+                    <li>
+                        <h4 class="category">구현된 페이지</h4>
+                        <ul class="submenu emphasis-color">
+                            <li><a href="guestbook.html">방명록</a></li>
+                            <li><a href="insert.html">글 쓰기</a></li>
+                            <li><a href="list.html">글 가져오기</a></li>
+                            <li><a href="manage.html">글 읽기</a></li>
+                            <li><a href="login.html">로그인 페이지</a></li>
+                            <li><a href="manage.html">관리자 페이지</a></li>
+                            <li><a href="loading.html">로딩 페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--
+                접기 기능
+                방명록
+                태그
+                채팅
+                guest book 방명록
+                글 보는 부분에서 검색창 검색기능
+            -->
+            <div class="menu-addons">
+                <div class="profile">
+                    <!-- 슬라이드로 사진 추가 모양 선택 가능 -->
+                    <div class="add-image">
+                        <img src="img/dummy_profile.png" alt="프로필 이미지">
+                    </div>
+                    <div class="name">
+                        개발자 박상민
+                    </div>
+                    <div class="add-aboutme">
+    
+                    </div>
+                </div>
+                <ul class="sns">
+                    <li><a href="#"><i class="fab fa-blogger-b"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <div class="setting">
+                    <a href="#">
+                        LOGIN
+                    </a>
+                    <a href="#">
+                        GUEST BOOK
+                    </a>
+                    <!-- 로그인 됬을 때
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            설정과 글 작성
+                        </a>
+                    -->
+                </div>
+            </div>
+        </nav>
+        <div class="search">
+            
+        </div>
+    </header>
+    <div class="header-space"></div>
+    <section class="home-page">
+        <h1 class="title">
+            안녕하세요.<br>
+            개인 포트폴리오 용도로 만든 블로그입니다.
+        </h1>
+        <article class="photogallery"><!-- 게시판 -->
+            <h3 class="title">포토 갤러리</h3>
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/exam.jpg" alt="이미지">
+                        <span>2021.05.11</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/exam_02.jpg" alt="이미지">
+                        <span>2021.05.11</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/exam_03.jpg" alt="이미지">
+                        <span>2021.05.11</span>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article class="board"><!-- 게시판 -->
+            <h3 class="title">인기 글</h3>
+            <ul>
+                <li class="emphasis-color">
+                    <div class="text-box">
+                        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet odio pariatur, velit cupiditate quis totam perspiciatis sunt delectus architecto inventore ullam minus culpa deleniti! Vel consectetur ratione necessitatibus voluptates!</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                        </p>
+                        <div class="info">
+                            <div>
+                                <span>카테고리</span>
+                                <span>2021.05.11</span>
+                                <span>댓글 30개</span>
+                            </div>
+                            <div>
+                                <span>개발자 박상민</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-box">
+                        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet odio pariatur, velit cupiditate quis totam perspiciatis sunt delectus architecto inventore ullam minus culpa deleniti! Vel consectetur ratione necessitatibus voluptates!</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                        </p>
+                        <div class="info">
+                            <div>
+                                <span>카테고리</span>
+                                <span>2021.05.11</span>
+                                <span>댓글 30개</span>
+                            </div>
+                            <div>
+                                <span>개발자 박상민</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-box">
+                        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet odio pariatur, velit cupiditate quis totam perspiciatis sunt delectus architecto inventore ullam minus culpa deleniti! Vel consectetur ratione necessitatibus voluptates!</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                        </p>
+                        <div class="info">
+                            <div>
+                                <span>카테고리</span>
+                                <span>2021.05.11</span>
+                                <span>댓글 30개</span>
+                            </div>
+                            <div>
+                                <span>개발자 박상민</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-box">
+                        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet odio pariatur, velit cupiditate quis totam perspiciatis sunt delectus architecto inventore ullam minus culpa deleniti! Vel consectetur ratione necessitatibus voluptates!</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                        </p>
+                        <div class="info">
+                            <div>
+                                <span>카테고리</span>
+                                <span>2021.05.11</span>
+                                <span>댓글 30개</span>
+                            </div>
+                            <div>
+                                <span>개발자 박상민</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-box">
+                        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet odio pariatur, velit cupiditate quis totam perspiciatis sunt delectus architecto inventore ullam minus culpa deleniti! Vel consectetur ratione necessitatibus voluptates!</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Distinctio a laudantium assumenda eligendi vero blanditiis 
+                            asperiores magni atque ullam, velit hic in veritatis quos ad. 
+                            Dolorem pariatur consequuntur vitae hic!
+                        </p>
+                        <div class="info">
+                            <div>
+                                <span>카테고리</span>
+                                <span>2021.05.11</span>
+                                <span>댓글 30개</span>
+                            </div>
+                            <div>
+                                <span>개발자 박상민</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="paging emphasis-color">
+                <a href="#">PREV</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">NEXT</a>
+            </div>
+        </article>
+    </section>
+    <div class="scrolltop-btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="space"></div>
+    <footer class="footer">
+        <p>2021.05.10 시작</p>
+        <p>
+            예나 지금이나 변함 없는 것은<br>
+            메모하는 것이 힘이다.<br>
+        </p>
+        <p>xectler@gmail.com</p>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/commons.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

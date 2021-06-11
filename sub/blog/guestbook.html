@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guestbook</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="guestbook-page">
+        <section class="form">
+            <h1 class="title">guestbook</h1>
+            <form action="">
+                <div class="container">
+                    <div class="name box">
+                        <input type="text" placeholder="이름" autofocus>
+                    </div>
+                    <div class="pwd box">
+                        <input type="password" placeholder="비밀번호">
+                    </div>
+                    <div class="text-box">
+                        <div contenteditable="true" class="text-input">
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div>
+                            <input type="checkbox" id="secret-text" class="hidden">
+                            <div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <label for="secret-text">비밀글</label>
+                        </div>
+                        <button class="submit">등록</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="reply-list">
+            <ul class="box">
+                <li class="reply"> <!-- 댓글을 달면 추가-->
+                    <div class="info">
+                        <span class="margin-right">이름</span>
+                        <span class="margin-right">2021.05.14</span>
+                    </div>
+                    <div class="comment">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae libero perferendis iste! Placeat ipsam, perferendis odio natus numquam eos a tenetur iste ut nam inventore commodi ex deserunt distinctio officia?
+                    </div>
+                    <div class="modify">
+                        <a href="#" class="margin-left">수정</a>
+                        <a href="#" class="margin-left">삭제</a>
+                        <button class="margin-left submit">댓글</button>
+                    </div>
+                    <ul class="box"> <!-- 댓글이 추가 되었을 때 생기는 box-->
+                        <li class="reply-answer">
+                            <div class="info">
+                                <span class="margin-right">이름</span>
+                                <span class="margin-right">2021.05.14</span>
+                            </div>
+                            <div class="comment">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae libero perferendis iste! Placeat ipsam, perferendis odio natus numquam eos a tenetur iste ut nam inventore commodi ex deserunt distinctio officia?
+                            </div>
+                            <div class="modify">
+                                <a href="#" class="margin-left">수정</a>
+                                <a href="#" class="margin-left">삭제</a>
+                                <button class="margin-left submit">댓글</button>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="box-add-commnet">  <!-- 댓글이 추가 되었을 때 대댓글 기능-->
+                        <li class="reply-answer">
+                            <div class="info">
+                                <span class="margin-right">이름</span>
+                                <span class="margin-right">2021.05.14</span>
+                            </div>
+                            <div class="comment">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae libero perferendis iste! Placeat ipsam, perferendis odio natus numquam eos a tenetur iste ut nam inventore commodi ex deserunt distinctio officia?
+                            </div>
+                            <div class="modify">
+                                <a href="#" class="margin-left">수정</a>
+                                <a href="#" class="margin-left">삭제</a>
+                                <button class="margin-left submit">댓글</button>
+                            </div>
+                        </li>
+                    </ul> <!-- 댓글이 추가 되었을 때 생기는 box-->
+                    <ul class="box"> <!-- 댓글이 추가 되었을 때 생기는 box-->
+                        <li class="reply-answer">
+                            <div class="info">
+                                <span class="margin-right">이름</span>
+                                <span class="margin-right">2021.05.14</span>
+                            </div>
+                            <div class="comment">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae libero perferendis iste! Placeat ipsam, perferendis odio natus numquam eos a tenetur iste ut nam inventore commodi ex deserunt distinctio officia?
+                            </div>
+                            <div class="modify">
+                                <a href="#" class="margin-left">수정</a>
+                                <a href="#" class="margin-left">삭제</a>
+                                <button class="margin-left submit">댓글</button>
+                            </div>
+                        </li>
+                    </ul> <!-- 댓글이 추가 되었을 때 생기는 box-->
+                    <div class="paging"><!-- 답글 페이징 -->
+                        <a href="#">PREV</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">NEXT</a>
+                    </div>
+                </li> <!-- 댓글을 달면 추가-->
+            </ul>
+            <div class="paging"> <!-- 댓글 페이징 -->
+                <a href="#">PREV</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">NEXT</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

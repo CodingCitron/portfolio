@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="board-page-insert">
+        <form action="" method="POST">
+            <select name="" id="category">
+                <option selected>카테고리 선택</option>
+                <optgroup label="프론트엔드">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JAVASCRIPT</option>
+                </optgroup>
+            </select>
+            <div class="edit-menu">
+                <ul>
+                    <li>
+                        <button href="#" class="bring-btn edit-btn" onclick="editBtn(event, 'folder')">
+                            <i class="far fa-folder"></i>
+                        </button>
+                        <ul>
+                            <li class="image">사진</li>
+                            <li class="file">파일</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button href="#" class="font-btn edit-btn" onclick="editBtn(event, 'font')">
+                            <i class="fas fa-font"></i>
+                        </button>
+                        <ul class="font-select">
+                            <li data-font="DM Sans">DM Sans</li>
+                            <li data-font="Merriweather">Merriweather</li>
+                            <li data-font="Nanum Myeongjo">Nanum Myeongjo</li>
+                            <li data-font="Nanum Gothic">Nanum Gothic</li>
+                            <li data-font="Patrick Hand">Patrick</li>
+                        </ul>
+                    </li>
+                    <li><!--글자 크기로 수정-->
+                        <button href="#" class="edit-btn font-size-btn" onclick="editBtn(event, 'font-size')">
+                            <i class="fas fa-text-width"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn margin-left bold-btn" onclick="editBtn(event, 'bold')">
+                            <i class="fas fa-bold"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn italic-btn" onclick="editBtn(event, 'italic')">
+                            <i class="fas fa-italic"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn underline-btn" onclick="editBtn(event, 'underline')">
+                            <i class="fas fa-underline"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn color-btn" onclick="editBtn(event, 'color')">
+                            <i class="fas fa-palette"></i>
+                        </button>
+                        <ul id="color-box">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li><input type="text" name="color" class="color-select" placeholder="#123456"></li>
+                            <li><button class="color-input-btn">입력</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn margin-left justify-left-btn" onclick="editBtn(event, 'justify-left')">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn justify-center-btn" onclick="editBtn(event, 'justify-center')">
+                            <i class="fas fa-align-center"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn justify-right-btn" onclick="editBtn(event, 'justify-right')">
+                            <i class="fas fa-align-right"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn margin-left list-btn" onclick="editBtn(event, 'list')">
+                            <i class="fas fa-list-ul"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn" onclick="editBtn(event, 'table')">
+                            <i class="fas fa-table"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn" onclick="editBtn(event, 'link')">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="edit-btn" onclick="editBtn(event, 'shape')">
+                            <i class="fas fa-shapes"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="edit-window-title">
+                <input type="text" placeholder="제목을 입력하세요." autofocus>
+            </div>
+            <div class="edit-window-content" contenteditable="true">
+                
+            </div>
+            <div class="edit-window-html"> <!-- 태그 편집 가능하게 -->
+
+            </div>
+            <div class="submit-container">
+                <span>파일 첨부 : </span>
+                <div>
+                    <button class="html-text-toggle submit">HTML</button>
+                    <button class="submit">등록</button>
+                    <button class="submit">취소</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/toggle.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+</html>

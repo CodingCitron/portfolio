@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+        방문자 오늘, 어제, 방문자 통계, 
+        글 개수 + 최근 작성 글,
+        유입 경로, 유입 키워드,
+    -->
+    <div class="manage-page">
+        <div class="home">
+            <section class="visitor-count"> <!-- 방문자 -->
+                <h3>방문자</h3>
+                <div>
+                    <dl class="today">
+                        <dt>오늘</dt>
+                        <dd>1,200</dd>
+                    </dl>
+                    <dl class="yesterday">
+                        <dt>어제</dt>
+                        <dd>3,200</dd>
+                    </dl>
+                    <dl class="yesterday">
+                        <dt>누적</dt>
+                        <dd>500,000</dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="visitor-statistics">
+                <h3>방문 통계</h3>
+                <div class="statistics">
+
+                </div>
+                <ol class="date">
+                    <li></li>
+                </ol>
+            </section>
+            <div class="etc">
+                <div class="visitor-inflow"> <!-- 유입 -->
+                    <article class="path"> <!-- 경로 -->
+                        <h3>검색 경로 순위</h3>
+                        <ol>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                        </ol>
+                    </article>
+                    <article class="keyword"> <!-- 키워드 -->
+                        <h3>검색어 순위</h3>
+                        <ol>
+                             <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                        </ol>
+                    </article>
+                </div>
+                <div class="me-post">
+                    <article class="popular-posts"> <!-- 인기 글-->
+                        <h3>인기 글</h3>
+                        <ul>
+                             <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </article>
+                    <article class="recent-posts"> <!-- 최근 작성한 글 -->
+                        <h3>최근 작성 글</h3>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="profile">
+                <!-- 슬라이드로 사진 추가 모양 선택 가능 -->
+                <div class="add-image">
+
+                </div>
+                <p class="name">개발자 박상민</p>
+                <div class="add-aboutme">
+                    저의 블로그에 방문해 주셔서 감사합니다.
+                </div>
+                <button class="submit">
+                    프로필 수정
+                </button>
+            </div>
+            <div class="link">
+                <h3>콘텐츠</h3>
+                <ul>
+                    <li><a href="#">글 관리</a></li>
+                    <li><a href="#">카테고리 관리</a></li>
+                </ul>
+                <h3>댓글·방명록</h3>
+                <ul>
+                    <li><a href="#">댓글 관리</a></li>
+                    <li><a href="#">방명록 관리</a></li>
+                </ul>
+                <h3>통계</h3>
+                <ul>
+                    <li><a href="#">방문 통계</a></li>
+                    <li><a href="#">유입 경로</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

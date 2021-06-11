@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>레시피 추천</title>
+<link rel="shortcut icon" href="imgs/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <!--헤더-->
+    <div class="dark"></div>
+    <header>
+        <h1><a href="index.html"><span>wi</span>nery</a></h1><!--LOGO-->
+        <div class="hd-burger-btn"><!--burger-btn-->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="hd-topmenu">
+            <li><a href="#">login</a></li>
+            <li><a href="#">join</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="recipe.html">recipe</a></li>
+            <li><a href="tour.html">tour</a></li>
+        </ul>
+        <ul class="tab-low">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <script>
+        $(document).ready(function() {
+            $('.at01').css({'opacity':'0'});
+            $('.at01-img').css({'opacity':'0'});
+            $('.at01-txt').css({'opacity':'0'});
+    
+            $(window).scroll(function(e){
+                    var top = $(this).scrollTop(); 
+    
+                    top > 250 ? (
+                    
+                        $('.at01').animate({'opacity':'1'},300, function(){
+                                $('.at01-img').animate({'opacity':'1'},500, function(){
+                                    $('.at01-txt').animate({'opacity':'1'},500, function(){
+                        
+                                    });
+                                }); 
+                            })
+                    ) : (
+    
+                        $('.at01').stop().clearQueue().animate({'opacity':'0'},300),
+                        $('.at01-img').stop().clearQueue().animate({'opacity':'0'},300),
+                        $('.at01-txt').stop().clearQueue().animate({'opacity':'0'},300)
+                    )      
+                        
+            });
+    
+            /*순대볶음 modal*/
+            $(".at02-sunBtn").click(function(){
+                $(".at02-sunmodal").fadeIn();
+            });
+            $("#sunx").click(function(){
+                $(".at02-sunmodal").fadeOut();
+            });
+    
+            /*무화과 modal*/
+            $(".at02-figBtn").click(function(){
+                $(".at02-figmodal").fadeIn();
+            });
+            $("#figx").click(function(){
+                $(".at02-figmodal").fadeOut();
+            });
+        });
+    </script>
+    <div class="subpage-recipe">
+        <!--모달-->
+        <div class="at02-sunmodal">
+            <div class="at02-modalHeader">
+                <h4>순대볶음</h4>
+                <p id="sunx" class="moClose">close</p>
+            </div>
+            <div class="at02-modalContent">
+                <div class="at02-modalIng">
+                    <h4>재료</h4>
+                    <p class="rep">순대, 양배추, 버섯, 깻잎, 홍고추</p>
+                </div>
+                <div class="at02-modalRep">
+                    <h4>만드는 방법</h4>
+                    <p class="rep">1.순대를 찜통에 7분가량 찐다</p>
+                    <p>2.떡을 찬물에 불려주세요</p>
+                    <p>3.양념은 1:1:1비율로 만든다</p>
+                </div>
+            </div>
+        </div>
+        <div class="at02-figmodal">
+            <div class="at02-modalHeader">
+                <h4>무화과치즈크림 카나페</h4>
+                <p id="figx" class="moClose">close</p>
+            </div>
+            <div class="at02-modalContent">
+                <div class="at02-modalIng">
+                    <h4>재료</h4>
+                    <p class="rep">무화과, 식빵, 크림치즈, 메이플시럽</p>
+                </div>
+                <div class="at02-modalRep">
+                    <h4>만드는 방법</h4>
+                    <p class="rep">1.무화과에 물기를 빼준다.</p>
+                    <p>2.식빵은 버터에 굽는다.</p>
+                    <p>3.무화과는 올리기 좋은 크기로 잘라준다.</p>
+                </div>
+            </div>
+        </div>        
+        <section>
+            <div class="sc-banner"></div>
+            <h3>Recommend <span>Food Pairing</span></h3>
+            <p>배달 음식이나 편의점 과자, 주말에 만드는 솥밥과 국민 간식 분식에 <span>경쾌</span>하게 맞아 떨어지는 <span>와인</span>을 곁들여 <span>두 배 맛있는 한끼</span>를 즐길 수 있다면?</p>
+
+            <div class="at01">
+                <div class="tb-at01-coverbox"></div>
+                <div class="at01-container">
+                    <div class="at01-img"></div>
+                    <div class="at01-txt">
+                        <p class="at01-txt-title">What is Pairing Food</p>
+                        <h4>와인페어링</h4>
+                        <p class="at01-txt-con">음식과 어울리는 와인을 찾을 때는 2가지를 기억하면 쉬워진다. 각각의 재료마다 맛있는 특징이 있을 때, 서로 만나 두 배 더 맛있어지는 ‘상승 페어링’. 재료 중 한 가지가 약간의 취약함 또는 단점을 지니고 있을 때(이를테면 비린 맛, 콤콤한 맛 같은 부정적인 뉘앙스) 와인을 만나 그 단점이 ‘맛있음’으로 변신하는 ‘보완 페어링’이다.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="at02-container">
+                <div class="at02-container-sun">
+                    <div class="at02-sunBox01">
+                        <button class="at02-sunBtn">Recipe <i class="far fa-clipboard"></i></button>
+                    </div>
+                    <div class="at02-sunBox02">
+                        <h4><span>Sundae</span> Bokkeum</h4>
+                        <p>홈술족 증가와 함께 와인 판매량이 눈에 띄게 증가했다. 더불어 와인과 페어링하기 좋은 간편 안주들이 주목된다. 준비 과정이 간편해 혼자 집에서 즐기기에 부담스럽지 않고, 과하지 않은 맛으로 와인 본연의 풍미에 집중할 수 있도록 도와준다.
+                        </p>
+                    </div>
+                </div>
+                <div class="at02-container-fig">
+                    <div class="at02-figBox01"></div>
+                    <div class="at02-figBox02">
+                        <button class="at02-figBtn">Recipe <i class="far fa-clipboard"></i></button>
+                    </div>
+                    <div class="at02-figBox03">
+                        <h4>Fig cream <span>cheese canapé</span></h4>
+                    </div>
+                    <div class="at02-figBox04"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="ft-wrap">
+        <ul class="ft-contents">
+            <li>
+                <ul class="ft-siteMap">
+                    <li>
+                        <select onchange="window.open(value,'_blank');">
+                        <option>사이트 맵</option>
+                        <option value="./product.html">와인 구매</option>
+                        <option value="#">안주 구매</option>
+                        </select>
+                    </li>
+                </ul>
+             </li>
+             <li>
+                <ul class="ft-sns">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                     <div class="clear"></div>
+                 </ul>
+             </li>
+         </ul>
+         <ul class="ft-txt">
+            <li>와이너리</li>
+            <li>하형태</li>
+            <li>경상북도 영천시 금호읍 원기리 414-2</li>
+            <li>tel. 054-333-3010 fax. 054-333-3011</li>
+            <li>vincoree@naver.com</li>
+         </ul>
+        </div>
+     </footer>
+<script src="js/header.js"></script>
+</body>
+</html>

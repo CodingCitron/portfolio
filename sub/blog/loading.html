@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-loading{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .page-loading > div{
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
+        }
+        
+        .page-loading > div > h2{
+            position: relative;
+            font-family: "Patrick Hand", cursive;
+            font-size: 48px;
+            letter-spacing: 10px;
+            animation: typing 8s steps(10) infinite;
+            overflow: hidden;
+        }
+
+        .page-loading > div > h2::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: #495464;
+            animation: blinkCursor 0.8s steps(3) infinite;
+        }
+
+        @keyframes blinkCursor{
+            0%, 75%{
+                opacity: 1;
+            }
+            76%, 100%{
+                opacity: 0;
+            }
+        }
+
+        @keyframes typing{
+            0%, 90% , 100%{
+                width: 0;
+            }
+            30%, 60%{
+                width: 259.38px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-loading">
+        <div>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <script>
+        // window.onload = function(){
+        //     const pageLoad = document.querySelector('.page-loading');
+
+        //     pageLoad.style.display = 'none';
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="dark"></div>
+        <header>
+            <div class="header-fixed">
+                <div class="topmenu">
+                    <div class="topmenu-wrap">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a href="member.html">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gnb-wrap">
+                    <div class="gnb-inner">
+                        <h1><a href="index.html"><img src="./img/logo_02.png" alt="로고"></a></h1>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">about</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">submenu</a></li>
+                                        <li><a href="#">submenu</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">brand</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">submenu</a></li>
+                                        <li><a href="#">submenu</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">product</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">submenu</a></li>
+                                        <li><a href="#">submenu</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">event</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">submenu</a></li>
+                                        <li><a href="#">submenu</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">news</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">submenu</a></li>
+                                        <li><a href="#">submenu</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="gnb-sidemenu">
+                            <li>
+                                <input type="text" name="search" placeholder="검색어">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="fas fa-user"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <div class="sidenavbar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidenavbar-open">
+                <div class="sidenavbar-topmenu">
+                    <a href="login.html">로그인</a>/
+                    <a href="member.html">회원가입</a>
+                </div>
+                <ul class="sidenavbar-menu">
+                    <li>
+                        <a href="#">about</a><i class="fas fa-chevron-down"></i>
+                        <ul class="sidenavbar-submenu">
+                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">submenu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">brand</a><i class="fas fa-chevron-down"></i>
+                        <ul class="sidenavbar-submenu">
+                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">submenu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">product</a><i class="fas fa-chevron-down"></i>
+                        <ul class="sidenavbar-submenu">
+                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">submenu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">event</a><i class="fas fa-chevron-down"></i>
+                        <ul class="sidenavbar-submenu">
+                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">submenu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">news</a><i class="fas fa-chevron-down"></i>
+                        <ul class="sidenavbar-submenu">
+                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">submenu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sidenavbar-search">
+                    <input type="text" name="search" placeholder="검색어">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="sidenavbar-sns">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="login">
+            <h3>로그인</h3>
+            <ul class="login-tabmenu">
+                <li class="loginForm">로그인</li><li class="nonMemberOrder">비회원 주문조회</li>
+            </ul>
+            <form action="#" method="POST" class="login-form">
+                <ul>
+                    <li><input type="text" name="id" placeholder="아이디를 입력하세요." required></li>
+                    <li><input type="password" name="pwd" placeholder="비밀번호를 입력하세요." required></li>
+                    <li><input type="checkbox" id="id-save" name="id-save"><label for="id-save"><i class="fas fa-check-circle"></i><span>아이디 저장</span></label></li>
+                    <li><input type="submit" value="로그인"></li>
+                </ul>
+                <ul class="memeber">
+                    <li><a href="#">아이디/비밀번호 찾기</a></li>
+                    <li><a href="#">회원 가입</a></li>
+                </ul>
+            </form>
+            <form action="#" method="POST" class="nonmember-form">
+                <ul>
+                    <li><input type="text" name="order" placeholder="주문번호를 입력하세요." required></li>
+                    <li>
+                        <select name="tel0" required>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                        <input type="tel" name="tel1" placeholder="1234" required>
+                        <input type="tel" name="tel2" placeholder="5678" required>
+                    </li>
+                    <li><input type="submit" value="주문 조회"></li>
+                </ul>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-logo">
+                    <h1><img src="./img/logo_03.png" alt="로고"></h1>
+                </div>
+                <div class="footer-contact">
+                    <h3>contact us</h3>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>대한민국 광주 광역시 남구 봉선동 무등파크 3차</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+82 010 1234 5678</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt hide"></i>
+                                <p>+82 062 1234 5678</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>xeclter@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-sns">
+                    <h3>sns</h3>
+                    <ul>
+                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>subscribe</h3>
+                    <form action="#">
+                        <ul>
+                            <li><input type="email" placeholder="Enter Your Email"><input type="submit" value="Subscribe"></li> 
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <button class="topbtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+    </div>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

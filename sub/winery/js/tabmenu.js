@@ -1,0 +1,9 @@
+$(document).ready(function(e){
+	$('.at01-tabmenu-btn').click(function(e){
+		e.preventDefault();
+		$('.at01-tabmenu-btn').removeClass('cover-btn');
+		$('.at01-tabmenu-contents').removeClass('cover-content');
+		$(this).toggleClass('cover-btn');
+		$(this).next().toggleClass('cover-content');
+	});
+});
