@@ -10,17 +10,20 @@ https://mamx.dothome.co.kr/
 
 <h2>조별 과제</h2>
 
-![수정됨_localhost_8080_Winery_index](https://user-images.githubusercontent.com/78482307/124538016-ecb7ff80-de55-11eb-9aae-df17917f21eb.png)
-![수정됨_localhost_8080_Winery_index (1)](https://user-images.githubusercontent.com/78482307/124538020-ee81c300-de55-11eb-9524-f19a14ecb5cf.png)
-
-
-![수정됨_localhost_8080_Winery_product](https://user-images.githubusercontent.com/78482307/124538027-f0e41d00-de55-11eb-915b-4748e8019d38.png)
-![수정됨_localhost_8080_Winery_recipe (2)](https://user-images.githubusercontent.com/78482307/124538045-f6416780-de55-11eb-9758-337259940e2b.png)
-![수정됨_localhost_8080_Winery_tour](https://user-images.githubusercontent.com/78482307/124538064-fb9eb200-de55-11eb-98a3-e09d81d31a2b.png)
-
 ![수정됨_localhost_8080_Winery_community (1)](https://user-images.githubusercontent.com/78482307/124538104-09543780-de56-11eb-8bfd-234349a73770.png)
 ![수정됨_localhost_8080_Winery_insert (1)](https://user-images.githubusercontent.com/78482307/124538106-0a856480-de56-11eb-8ad2-6cfc7ef80ebd.png)
-
 ![수정됨_localhost_8080_Winery_login](https://user-images.githubusercontent.com/78482307/124538110-0d805500-de56-11eb-892e-3a105fd2ab56.png)
 ![수정됨_localhost_8080_Winery_register](https://user-images.githubusercontent.com/78482307/124538111-0d805500-de56-11eb-922e-90583bd135af.png)
+
+
+<h2>개인 포폴</h2>
+
+![수정됨_localhost_8080_Mount_index jsp (1)](https://user-images.githubusercontent.com/78482307/124539018-a663a000-de57-11eb-854e-3d6cb9666961.png)
+
+![수정됨_localhost_8080_Mount_EventPageController](https://user-images.githubusercontent.com/78482307/124539020-a82d6380-de57-11eb-8eac-c69dc80e0741.png)
+
+![수정됨_localhost_8080_Mount_login jsp](https://user-images.githubusercontent.com/78482307/124539029-aa8fbd80-de57-11eb-9aca-70475a3379f9.png)
+![수정됨_localhost_8080_Mount_signup jsp](https://user-images.githubusercontent.com/78482307/124539044-ae234480-de57-11eb-9dd2-6b713c4a6b5b.png)
+
+
 
